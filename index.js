@@ -44,7 +44,7 @@ fs.createReadStream('data.csv')
   }
 
   function writeSensors(groupObjects = []) {
-        const sensors = groupObjects.filter(address => address.address.includes('/1/'))
+        const sensors = groupObjects.filter(address => address.address.includes('/1/') && address.name !== ' ')
 
         writeLine('sensor:')
         sensors.forEach(s => {

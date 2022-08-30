@@ -1,0 +1,54 @@
+switch:
+  - name: "Living button 1"
+    address: "0/3/0"
+  - name: "Living button 2"
+    address: "0/3/1"
+  - name: "Living button 3"
+    address: "0/3/2"
+  - name: "Living button 4"
+    address: "0/3/3"
+  - name: "Living button 1 long"
+    address: "0/3/4"
+  - name: "Living button 2 long"
+    address: "0/3/5"
+  - name: "Living button 3 long"
+    address: "0/3/6"
+  - name: "Living button 4 long"
+    address: "0/3/7"
+  - name: "Kitchen button 1"
+    address: "0/3/8"
+  - name: "Kitchen button 2"
+    address: "0/3/9"
+    payload: 0xFF
+    payload_length: 1
+  - name: "Kitchen button 3"
+    address: "0/3/10"
+  - name: "Kitchen button 4"
+    address: "0/3/11"
+  - name: "Kitchen button 1 long"
+    address: "0/3/12"
+  - name: "Kitchen button 2 long"
+    address: "0/3/13"
+  - name: "Kitchen button 3 long"
+    address: "0/3/14"
+  - name: "Kitchen button 4 long"
+    address: "0/3/15"
+binary_sensor:
+  - name: "pir_kitchen_1"
+    device_class: motion
+    state_address: "0/2/0"
+  - name: "pir_kitchen_2"
+    device_class: motion
+    state_address: "0/2/1"
+  - name: "pir_kitchen_3"
+    device_class: motion
+    state_address: "0/2/2"
+sensor:
+  - name: "Teplota PIR 1"
+    state_address: "0/1/1"
+    type: temperature
+    sync_state: false
+  - name: "Jas PIR 1"
+    state_address: "0/1/0"
+    type: brightness
+    sync_state: false
